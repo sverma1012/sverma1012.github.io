@@ -51,8 +51,9 @@ div#menu {
 }
 
 #menu ul li {
-	display: inline;
-	padding: 20px;
+    display: inline;
+    padding: 20px;
+    font-size: 20px;
 }
 
 #menu a{
