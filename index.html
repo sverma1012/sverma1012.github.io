@@ -4,10 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Personal Website">
 	<meta name="keywords" content="Resume, Luther College, Personal">
-	<meta name="author" content="Sneha Verma">
+	<meta name="viewport" content="width=device-width">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="https://fonts.googleapis.com/css?family=Crete+Round|Handlee|Rajdhani|Special+Elite" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Patrick+Hand|Rajdhani" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title> Euphoric Mistakes 101 </title>
@@ -25,23 +27,34 @@
 		</div>
 
 		<div id="name">
-			<p> Sneha Verma</p>
+			<h2> Sneha Verma</h2>
 		</div>
 
-		<div id="menu">
-			<ul>
-				<li> <a href="home.html"> Home </a> </li>
-				<li> <a href="about.html"> About  </a> </li>
-				<li> <a href="project.html"> Project </a> </li>
-				<li> <a href="internship.html"> Internships </a> </li>
-				<li> <a href="contact.html"> Contact </a> </li>
-			</ul>
+		<div class="topnav" id="myTopnav">
+		  <a href="#home" class="active">Home</a>
+		  <a href="#news">News</a>
+		  <a href="#contact">Contact</a>
+		  <a href="#about">About</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		    <i class="fa fa-bars"></i> </a>
 		</div>
 
 	</div>
 
 	<div id="main">
-		<p>''</p>
+		<p></p>
 	</div>
+
+
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+		    x.className += " responsive";
+		  } else {
+		    x.className = "topnav";
+		  }
+		}
+	</script>
 </body>
 </html>
