@@ -121,12 +121,12 @@ div#body {
 .subsection h2{
   text-align: center;
   font-family: 'Rajdhani', sans-serif;
-  font-size: 2em;
+  font-size: 2vw;
 }
 
 .subsection p{
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.3vw;
 }
 
 .gray{
@@ -331,6 +331,29 @@ i.fab.fa-linkedin{
     width: auto;
     height: auto;
   }
+
+  #heading {
+    display: inline-block;
+    height: 35%;
+    margin: -3%;
+  }
+
+  #heading p{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 3em;
+    color: #000000;
+  }
+
+  div#name {
+    width: 11%;
+    float: right;
+  }
+
+  #name h2{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2vw;
+  }
+
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px){
