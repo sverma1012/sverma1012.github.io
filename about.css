@@ -3,22 +3,8 @@ body, html{
   margin: 0;
 }
 
-.background{
-  background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.7)), url(images/project.png);
-  height: 85%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  background-opacity: 0.5;
-  text-align: center;
-  position: relative;
-}
-
-.background_internships{
-  background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.7)), url(images/sapna.jpg);
+.background_about{
+  background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.7)), url(images/background.JPG);
   height: 85%; 
 
   /* Center and scale the image nicely */
@@ -144,29 +130,13 @@ div#body {
   font-size: 2vw;
 }
 
-.subsection p{
+.subsection p, .subsection ul{
   font-family: 'Quicksand', sans-serif;
   font-size: 1.3vw;
 }
 
 .gray{
   background-color: #D5DBDB;
-}
-
-.button{
-  padding: 15px 25px;
-  font-size: 0.8em;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: black;
- 
-  border: 2px solid black;
-}
-
-.button:hover{
-  background-color: lightgray;
-  color: white;
 }
 
 #footer{
