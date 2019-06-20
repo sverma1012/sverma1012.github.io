@@ -139,6 +139,21 @@ div#body {
   background-color: #D5DBDB;
 }
 
+.media a{
+  text-decoration: none;
+  color: black;
+}
+
+.media a:hover{
+  color: brown;
+}
+
+.underline{
+  font-size: 1.8vw;
+  text-decoration: underline;
+  color: #512E5F;
+}
+
 #footer{
   margin: 1% 4%;
 }

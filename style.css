@@ -152,7 +152,7 @@ div#body {
 
 #one{
   background: linear-gradient(rgba(255,255,255, 0.7), rgba(255,255,255, 0.8)), url(images/website.png);
-  border: 2px solid #9B59B6;
+  border: 2px solid black;
 }
 
 #one h3{
@@ -166,7 +166,7 @@ div#body {
 
 #two{
   background: linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)), url(images/fanfiction.png);
-  border: 2px solid #3498DB;
+  border: 2px solid black;
 }
 
 #two h3{
@@ -180,7 +180,7 @@ div#body {
 
 #three{
   background: linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)), url(images/forgiveness.png);
-  border: 2px solid #C0392B;
+  border: 2px solid black;
 }
 
 #three h3{
@@ -194,7 +194,7 @@ div#body {
 
 #four{
   background: linear-gradient(rgba(255,255,255, 0.8), rgba(255,255,255, 0.8)), url(images/maitinepal.png);
-  border: 2px solid #EDBB99;
+  border: 2px solid black;
 }
 
 #four h3{
@@ -208,7 +208,7 @@ div#body {
 
 #five{
   background: linear-gradient(rgba(255,255,255, 0.8), rgba(255,255,255, 0.8)), url(images/sapna2_small.jpg);
-  border: 2px solid #82E0AA;
+  border: 2px solid black;
 }
 
 #five h3{
@@ -221,16 +221,16 @@ div#body {
 }
 
 #six{
-  background: linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5));
-  border: 2px solid #F9E79F;
+  background: linear-gradient(rgba(255,255,255, 0.8), rgba(255,255,255, 0.8)), url(images/tutor.jpg);
+  border: 2px solid black;
 }
 
 #six h3{
-  color: #F9E79F;
+  color: #F5B041;
 }
 
 #six button:hover{
-  background-color: #F9E79F;
+  background-color: #F5B041;
   color: white;
 }
 
