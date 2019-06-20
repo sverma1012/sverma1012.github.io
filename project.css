@@ -31,6 +31,48 @@ body, html{
   position: relative;
 }
 
+.background_website{
+  background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.8)), url(images/website.png);
+  height: 85%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-opacity: 0.5;
+  text-align: center;
+  position: relative;
+}
+
+.background_fanfiction{
+  background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.8)), url(images/fanfiction.png);
+  height: 85%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-opacity: 0.5;
+  text-align: center;
+  position: relative;
+}
+
+.background_videos{
+  background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.8)), url(images/forgiveness.png);
+  height: 85%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-opacity: 0.5;
+  text-align: center;
+  position: relative;
+}
+
 #logo{
 	float: left;
 }
