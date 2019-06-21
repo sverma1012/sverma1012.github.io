@@ -73,6 +73,48 @@ body, html{
   position: relative;
 }
 
+.background_maiti{
+  background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.8)), url(images/maitinepal.png);
+  height: 85%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-opacity: 0.5;
+  text-align: center;
+  position: relative;
+}
+
+.background_sapna{
+  background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.8)), url(images/sapna2.jpg);
+  height: 85%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-opacity: 0.5;
+  text-align: center;
+  position: relative;
+}
+
+.background_tutor{
+  background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.8)), url(images/tutor.jpg);
+  height: 85%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-opacity: 0.5;
+  text-align: center;
+  position: relative;
+}
+
 #logo{
 	float: left;
 }
@@ -213,6 +255,18 @@ div#body {
 
 #footer{
   margin: 1% 4%;
+}
+
+i.fab.fa-instagram {
+    font-size: 200%;
+}
+
+i.fab.fa-linkedin{
+  font-size: 200%;
+}
+
+i.fas.fa-envelope-square {
+    font-size: 210%;
 }
 
 #copyright{

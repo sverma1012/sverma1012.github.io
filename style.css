@@ -287,12 +287,16 @@ div#body {
   color: purple;
 }
 
-i.fab.fa-facebook {
+i.fab.fa-instagram {
     font-size: 200%;
 }
 
 i.fab.fa-linkedin{
   font-size: 200%;
+}
+
+i.fas.fa-envelope-square {
+    font-size: 210%;
 }
 
 @media all screen and (min-width: 1280px) and (max-width: 1460px){

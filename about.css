@@ -158,6 +158,18 @@ div#body {
   margin: 1% 4%;
 }
 
+i.fab.fa-instagram {
+    font-size: 200%;
+}
+
+i.fab.fa-linkedin{
+  font-size: 200%;
+}
+
+i.fas.fa-envelope-square {
+    font-size: 210%;
+}
+
 #copyright{
   font-family: 'Fredericka the Great', cursive;
 }
