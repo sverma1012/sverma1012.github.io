@@ -139,6 +139,7 @@ div#body {
     float: left;
     height: 200px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .project h3{
@@ -231,6 +232,34 @@ div#body {
 
 #six button:hover{
   background-color: #F5B041;
+  color: white;
+}
+
+#seven{
+  background: linear-gradient(rgba(255,255,255, 0.8), rgba(255,255,255, 0.8)), url(images/github.png);
+  border: 2px solid black;
+}
+
+#seven h3{
+  color: #3498DB;
+}
+
+#seven button:hover{
+  background-color: #3498DB;
+  color: white;
+}
+
+#eight{
+  background: linear-gradient(rgba(255,255,255, 0.8), rgba(255,255,255, 0.8)), url(images/blog.png);
+  border: 2px solid black;
+}
+
+#eight h3{
+  color: #45B39D;
+}
+
+#eight button:hover{
+  background-color: #45B39D;
   color: white;
 }
 

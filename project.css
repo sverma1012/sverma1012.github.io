@@ -115,6 +115,34 @@ body, html{
   position: relative;
 }
 
+.background_github{
+  background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url(images/github.png);
+  height: 85%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-opacity: 0.5;
+  text-align: center;
+  position: relative;
+}
+
+.background_blog{
+  background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url(images/blog.png);
+  height: 85%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-opacity: 0.5;
+  text-align: center;
+  position: relative;
+}
+
 #logo{
 	float: left;
 }
