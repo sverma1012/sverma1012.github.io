@@ -39,7 +39,7 @@ body, html{
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 20px;
     margin: 2%;
 }
 
@@ -56,18 +56,8 @@ body, html{
 
 #heading p{
   font-family: 'Fredericka the Great', cursive;
-  font-size: 5vw;
+  font-size: 90px;
   color: #000000;
-}
-
-div#name {
-    width: 20%;
-    float: right;
-}
-
-#name h2{
-  font-family: 'Patrick Hand', cursive;
-  font-size: 2vw;
 }
 
 div#body {
@@ -116,7 +106,7 @@ div#body {
 #title{
   text-align: center;
   font-family: 'Fredericka the Great', cursive;
-  font-size: 2.5vw;
+  font-size: 45px;
 }
 
 .subsection {
@@ -127,12 +117,12 @@ div#body {
 .subsection h2{
   text-align: center;
   font-family: 'Rajdhani', sans-serif;
-  font-size: 2vw;
+  font-size: 30px;
 }
 
 .subsection p, .subsection ul{
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.3vw;
+  font-size: 20px;
 }
 
 .gray{
@@ -149,7 +139,7 @@ div#body {
 }
 
 .underline{
-  font-size: 1.8vw;
+  font-size: 20px;
   text-decoration: underline;
   color: #512E5F;
 }
