@@ -50,24 +50,14 @@ body, html{
 
 #heading {
     display: inline-block;
-    height: 35%;
+    height: 30%;
     margin: -3%;
 }
 
 #heading p{
   font-family: 'Fredericka the Great', cursive;
-  font-size: 90px;
+  font-size: 6vw;
   color: #000000;
-}
-
-div#name {
-    width: 20%;
-    float: right;
-}
-
-#name h2{
-  font-family: 'Patrick Hand', cursive;
-  font-size: 2vw;
 }
 
 div#body {
@@ -390,17 +380,6 @@ i.fas.fa-envelope-square {
     font-size: 3em;
     color: #000000;
   }
-
-  div#name {
-    width: 11%;
-    float: right;
-  }
-
-  #name h2{
-  font-family: 'Patrick Hand', cursive;
-  font-size: 2vw;
-  }
-
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px){
@@ -415,7 +394,7 @@ i.fas.fa-envelope-square {
   }
 }
 
-@media screen and (max-width: 480px){
+/*@media screen and (max-width: 480px){
 	.topnav a {
     float: none;
     display: block;
@@ -424,5 +403,16 @@ i.fas.fa-envelope-square {
   .project{
     width: auto;
     height: auto;
+  }
+
+    #heading {
+    display: inline-block;
+    height: 35%;
+    margin: -3%;
+  }
+
+  #heading p{
+    font-family: 'Fredericka the Great', cursive;
+    color: #000000;
   }
 }
