@@ -276,6 +276,7 @@ div#body {
   cursor: pointer;
   outline: none;
   color: black;
+  font-family: 'Quicksand', sans-serif;
  
   border: 2px solid black;
 }
