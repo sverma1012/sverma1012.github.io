@@ -1,0 +1,116 @@
+body,html{
+  display: block;
+  width: 100%;
+  height: 100%;
+  /*background: #000;*/
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+/*------------------------------------------------------------*/
+
+/* NAVIGATION */
+.navbar{
+	border: 1px solid black;
+}
+
+.nav-font {
+	font-family: 'Copperplate', Fantasy;
+	font-size: larger;
+}
+
+.nav-item .nav-link{
+	color: #8C7C3F !important;
+}
+
+.nav-item:hover .nav-link{
+	background-color: #BEBEBE;
+	color: white;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+/*------------------------------------------------------------*/
+
+/* Introduction Index Page: TYPING AND DESCRIPTION*/
+
+@import url(https://fonts.googleapis.com/css?family=Karla);
+
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.cursor {
+    animation: blink 0.7s infinite;
+}
+
+.typing {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	font-family: 'Georgia', serif;
+	font-weight: bold;
+}
+
+.description{
+	position: absolute;
+	top: 65%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	font-family: 'Lucida Console', monospace;
+}
+
+@media screen and (min-width: 601px) {
+  .typing {
+    font-size: 50px;
+  }
+
+  .description {
+    font-size: 40px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .typing {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+}
+
+
+/*------------------------------------------------------------*/
+
+/* FOOTER */
+
+#footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+
+
+
