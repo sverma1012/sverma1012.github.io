@@ -30,7 +30,74 @@
 		<!-- Navigation Bar-->
 		<div id="navbar">
 
-			<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D2D2D2;">
+
+			
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a class="nav-link nav-font" href="index.html">Home </a>
+			  <a class="nav-link nav-font" href="#about_me">About</a>
+			  <a class="nav-link nav-font" href="#">Data Psyched</a>
+			  <a class="nav-link nav-font" href="#experience">Work Experience</a>
+			  <a class="nav-link nav-font" href="#contact">Contact Me</a>
+			  <img src = "images/Sneha.png" width = "40" height = "40" alt = "Icon for Sneha Verma's personal website" id="icon">
+			</div>
+
+			<!-- Use any element to open the sidenav -->
+
+			<span onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+
+			<script>
+				function openNav() {
+				  document.getElementById("mySidenav").style.width = "250px";
+				  document.getElementById("main").style.marginLeft = "250px";
+				  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+				}
+
+				function closeNav() {
+				  document.getElementById("mySidenav").style.width = "0";
+				  document.getElementById("main").style.marginLeft= "0";
+				  document.body.style.backgroundColor = "white";
+				}
+			</script>
+
+			<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+			<div id="main">
+
+			  <!-- Rounded Image -->
+				<div id = 'profilePic'>
+					<img src="images/me2.jpg" alt="Avatar" class = "img-fluid">
+				</div>
+
+				<!-- Introduction Index Page -->
+
+				<div class="typing">
+					<script type="text/javascript" src="typewriter.js"></script>
+			  		<div class="typing-animation">
+			  			<span id="quote"></span>
+					</div>
+				</div>
+
+				<!-- Description of Sneha Verma -->
+				<div>
+					<p class = 'description'>
+						I am a data scientist and an economist. 
+					</p>
+				</div>
+
+				<!-- Resume -->
+				<div class="resume">
+					<button type="button" class="resume-text"><a href="SnehaVerma_Resume.pdf" target = "_blank" download>Resume</a></button>
+				</div>
+
+				<div class="end">
+					<a href="#main" id="icon">
+						<i class="fas fa-arrow-alt-circle-down"></i>
+					</a>
+				</div>
+			</div>
+
+			<!-- <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D2D2D2;">
 	  			<a class="navbar-brand" href="#"></a>
 	  				<img src = "images/Sneha.png" width = "40" height = "40" alt = "Icon for Sneha Verma's personal website">
 	  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,40 +129,10 @@
 	    			</ul>
 	    			
 	  			</div>
-			</nav>
+			</nav> -->
 		</div>
 
-		<!-- Rounded Image -->
-		<div id = 'profilePic'>
-			<img src="images/me2.jpg" alt="Avatar" class = "img-fluid">
-		</div>
-
-		<!-- Introduction Index Page -->
-
-		<div class="typing">
-			<script type="text/javascript" src="typewriter.js"></script>
-	  		<div class="typing-animation">
-	  			<span id="quote"></span>
-			</div>
-		</div>
-
-		<!-- Description of Sneha Verma -->
-		<div>
-			<p class = 'description'>
-				I am a data scientist and an economist. 
-			</p>
-		</div>
-
-		<!-- Resume -->
-		<div class="resume">
-			<button type="button" class="resume-text"><a href="SnehaVerma_Resume.pdf" target = "_blank" download>Resume</a></button>
-		</div>
-
-		<div class="end">
-			<a href="#main" id="icon">
-				<i class="fas fa-arrow-alt-circle-down"></i>
-			</a>
-		</div>
+		
 
 	</div>
 
