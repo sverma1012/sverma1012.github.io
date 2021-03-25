@@ -11,7 +11,6 @@ body,html{
 
 /*------------------------------------------------------------*/
 
-
 #header{
   height: 100%;
 }
@@ -521,6 +520,30 @@ p {
     display: none;
 }
 
+#more {
+  display: none;
+}
+
+.more{
+  display: none;
+}
+
+.read button{
+  margin-top: 15px;
+  display: block;
+}
+
+button:hover{
+  transform: scale(1.2);
+}
+
+
+.read{
+  background-color: rgba(3, 152, 158, 1) !important;
+  border: none;
+}
+
+
 /*-------------------------------------*/
 
 /* Skills Section */
@@ -690,6 +713,7 @@ footer{
 }
 
 .copyright{
+  position: absolute;
   float: right;
   width: 45%;
   text-align: right;
@@ -697,6 +721,25 @@ footer{
   font-weight: 300;
 }
 
+.button{
+  margin: 50px;
+  float: right;
+  width: 45%;
+  text-align: right;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 300;
+}
+
+#myBtn{
+  background-color: rgba(3, 152, 158, 1);
+  float: right;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 300;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
 
 /* Collapse timeline*/
 @media only screen and (max-width: 750px) {
