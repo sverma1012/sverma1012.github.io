@@ -448,7 +448,7 @@
 
   $(function(){
       $("#quote").typed({
-        strings: ["Hi! <br/> My name is Sneha Verma."],
+        strings: ["Data Analyst | Data Scientist | Economist"],
         typeSpeed: 50
       });
   });

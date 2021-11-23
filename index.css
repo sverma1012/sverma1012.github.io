@@ -57,6 +57,7 @@ body,html{
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
+  transform: scale(1.2);
 }
 
 /* Position and style the close button (top right corner) */
@@ -117,7 +118,7 @@ body,html{
   border-radius: 75%;
   width: 200px;
   position: absolute;
-  top: 28%;
+  top: 35%;
   transform: translate(0, -50%);
   margin-left: 50px;
   border: 2px solid black;
@@ -150,81 +151,121 @@ body,html{
     animation: blink 0.7s infinite;
 }
 
-.typing {
+.name{
   position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
+  top: 60%;
+  transform: translate(0, -150%);
   font-size: 50px;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Garamond', serif;
   font-weight: lighter;
   margin-left: 50px;
+  font-weight: bold;
 }
 
-.description{
+.typing {
   position: absolute;
-  top: 65%;
+  top: 60%;
   transform: translate(0, -50%);
   font-size: 50px;
-  font-family: 'Helvetica', sans-serif;
-  font-weight: lighter;
+  font-family: 'Garamond', serif;
   margin-left: 50px;
+  color: grey;
 }
 
 .resume{
   position: absolute;
-  top: 72%;
+  top: 70%;
   transform: translate(0, -50%);
   margin-left: 50px;
+  border: none;
+}
+
+#resume{
+  color: black;
 }
 
 .resume-text{
-  font-family: 'Helvetica', sans-serif;
-  font-size: 20px !important;
+  font-family: 'Garamond', serif;
+  /*font-size: 20px !important;*/
   border-radius: 10%;
-  color: #ECF0F1;
+  background-color: rgba(3, 152, 158, 1) !important;
 }
 
 .resume-text:hover{
   transform: scale(1.2);
   text-decoration: none !important;
   background-color: #839192;
+  color: black;
 }
 
 @media screen and (max-width: 1002px){
   #profilePic img{
-    width: 120px;
-    top: 40%;
+    width: 180px;
+    /*top: 40%;*/
   }
+
+  .name {
+    font-size: 35px;
+    top: 57%;
+  }
+
+  .typing {
+    font-size: 15px;
+    top: 57%;
+  }
+
+  .resume{
+    top:70%;
+  }
+
 }
 
 
 @media screen and (min-width: 601px) {
-  .typing {
-    font-size: 50px;
+  
+  .name {
+    font-size: 35px;
+    top: 63%;
   }
 
-  .description {
-    font-size: 40px;
+  .typing {
+    font-size: 15px;
+    top: 62%;
+  }
+
+}
+
+@media screen and (min-width: 0px) {
+  
+  .name {
+    font-size: 35px;
+    top: 63%;
+  }
+
+  .typing {
+    font-size: 15px;
+    top: 62%;
   }
 
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 1002px) {
-  .typing {
-    font-size: 25px;
-    top: 60%
+/*@media screen and (max-width: 1002px) {
+
+  .name {
+    font-size: 35px;
+    top: 57%;
   }
 
-  .description {
+  .typing {
     font-size: 15px;
-    top: 75%;
+    top: 57%;
   }
 
   .resume{
-    top:82%;
+    top:70%;
   }
-}
+}*/
 
 /* Arrow Icon */
 
@@ -269,12 +310,14 @@ body,html{
 h2 {
   color: $heading;
   font-size: 35px !important;
+  font-family: 'Garamond';
 }
 
 p {
   color: $text;
   margin: 0;
   font-family: 'Verdana', sans-serif;
+
 }
 
 @media screen and (max-width: 600px) {
@@ -481,7 +524,7 @@ p {
 
 .project {
   position: relative;
-  max-width: 900px;
+  /*max-width: 600px;*/
   margin: 0 auto 30px auto;
   overflow: hidden;
   background: #fff;
@@ -495,12 +538,12 @@ p {
   position: relative;
   padding: 30px 15px;
   transform: none;
-  max-width: 1000px;
+  max-width: 300px;
   border-radius: 5px;
 }
 
 .shadow-large{
-  box-shadow: 10px 10px 5px grey;
+  /*box-shadow: 10px 10px 5px grey;*/
 }
 
 h3 {
@@ -582,16 +625,58 @@ button:hover{
   margin: 7px;
   padding: 5px 10px;
   background: rgba(3, 152, 158, 1);
+  color: white;
 }
 
 /*-------------------------------------*/
 
+/* Certificates */
+
+#certificates {
+  padding: 50px 15px;
+  /*text-align: center;*/
+  border-bottom: 1px solid #B3B6B7;
+}
+
+#certificates .heading {
+  text-align: center;
+}
+
+.certificates-info {
+  position: relative;
+  padding: 15px 15px;
+  transform: none;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+#certificates ul {
+  display: table;
+  margin: 0 auto;
+  /*padding: 0;*/
+  max-width: 800px;
+}
+
+#certificates li{
+  display: inline-block;
+  margin: 7px;
+  padding: 5px 10px;
+  background: rgba(3, 152, 158);
+  color: white;
+}
+
+#certificates h3{
+  font-weight: bold;
+}
+
+/*-------------------------------------*/
 /* Contact */
 
 #contact {
   padding: 50px 15px;
   text-align: center;
   border-bottom: 1px solid #B3B6B7;
+  background-color: #ECF0F1;
 }
 
 h2 {
@@ -660,7 +745,7 @@ input:focus, textarea:focus {
 /* FOOTER */
 
 footer{
-  background-color: #ECF0F1;
+  /*background-color: #ECF0F1;*/
 }
 /*
 .site-links li{
