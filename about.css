@@ -70,6 +70,7 @@ html, body {
 /* --------------------------------------- */
 /* 4) Main Layout: Container & Columns */
 /* --------------------------------------- */
+/* Adjust column layout for switching left and center columns */
 .container {
   display: flex;
   justify-content: space-between;
@@ -102,14 +103,30 @@ html, body {
   max-height: calc(100vh - 100px); /* Prevent overflowing beyond the container */
 }
 
-/* Center Column Layout */
+.left-col {
+  order: 2; /* Move the left column to the center position */
+  flex: 1;
+}
+
+.center-col {
+  order: 1; /* Move the center column to the left position */
+  flex: 1;
+}
+
+.right-col {
+  order: 3; /* Keep the right column in its original position */
+  flex: 1;
+}
+
+/* Center Column Layout: Align items to the top */
 .center-col {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  max-height: none; /* Ensure the map and content are fully visible */
+  flex-direction: column; /* Keep content stacked vertically */
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center; /* Center horizontally */
+  overflow: hidden; /* Prevent overflow */
+  max-height: none; /* Ensure all content is fully visible */
+  padding-top: 1rem; /* Optional: Add spacing at the top */
 }
 
 /* --------------------------------------- */
@@ -228,6 +245,11 @@ html, body {
     flex-direction: column;
     height: auto;
     padding: 1rem;
+  }
+
+  .left-col, .center-col, .right-col {
+    order: initial; /* Reset to natural order */
+    flex: initial; /* Allow natural stacking */
   }
 
   .column {
