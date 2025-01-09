@@ -23,7 +23,7 @@ html, body {
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Centering adjustment */
   z-index: 1000; /* Bring navbar above other elements */
-  background: linear-gradient(185deg, #dc7a34, #d6573d); /* Gradient background */
+  background: linear-gradient(135deg, #dc7a34, #f5953b); /* Gradient background */
   border-radius: 40px; /* Rounded corners */
   padding: 1rem 3rem; /* Spacing inside the navbar */
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Shadow effect */

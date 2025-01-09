@@ -20,7 +20,7 @@ html, body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
-  background: linear-gradient(185deg, #dc7a34, #d6573d);
+  background: linear-gradient(135deg, #dc7a34, #f5953b);
   border-radius: 40px;
   padding: 1rem 3rem;
   box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
