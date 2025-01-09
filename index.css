@@ -87,6 +87,10 @@ html, body {
   object-fit: cover;
 }
 
+.profile-image img:hover {
+  transform: scale(1.1);
+}
+
 .profile-text h1,
 .profile-text p {
   margin: 0;
