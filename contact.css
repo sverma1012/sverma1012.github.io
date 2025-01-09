@@ -1,0 +1,255 @@
+/* --------------------------------------- */
+/* 1) Base Styles & Reset */
+/* --------------------------------------- */
+html, body {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    color: #000; /* Default text color */
+    background-color: #1a1d61; /* Background color for the page */
+    width: 100%; /* Ensure it spans the full width */
+    height: 100%; /* Ensure it spans the full height */
+}
+
+/* --------------------------------------- */
+/* 2) Navbar Styles */
+/* --------------------------------------- */
+/* Styling for the navbar container */
+.rounded-navbar {
+    position: fixed; /* Fix navbar position at the top */
+    top: 2%; /* Space from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centering adjustment */
+    z-index: 1000; /* Bring navbar above other elements */
+    background: linear-gradient(185deg, #dc7a34, #d6573d); /* Gradient background */
+    border-radius: 40px; /* Rounded corners */
+    padding: 1rem 3rem; /* Spacing inside the navbar */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    transition: background 0.5s ease, box-shadow 0.5s ease; /* Smooth transitions */
+  }
+  
+  /* Navbar style when scrolled */
+  .rounded-navbar.scrolled {
+    opacity: 0.7; /* Slightly faded appearance */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+  }
+  
+  /* Navbar link container styling */
+  .nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center-align links */
+    gap: 2rem; /* Space between links */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Styling for individual navbar links */
+  .nav-links li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #504cb4; /* Default link color */
+    font-size: 1rem; /* Font size for links */
+    font-weight: 500; /* Font weight */
+    padding: 0.3rem 1rem; /* Inner spacing */
+    border-radius: 20px; /* Rounded edges for hover effect */
+    transition: 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for navbar links */
+  .nav-links li a:hover {
+    background-color: rgba(167, 227, 200, 0.2); /* Background on hover */
+    color: #fff; /* White text on hover */
+  }
+
+/* --------------------------------------- */
+/* 3) Header Styles (No Changes) */
+/* --------------------------------------- */
+.vintage-header {
+    margin-top: 80px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.vintage-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: 'Garamond', serif;
+}
+
+/* --------------------------------------- */
+/* 4) Contact Container Layout */
+/* --------------------------------------- */
+.contact-container {
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Full width */
+    /*height: calc(100vh - 110px); /* Full height minus header margin */
+    box-sizing: border-box; /* Include padding and border in dimensions */
+    margin-top: 2rem;
+}
+
+.contact-form {
+    width: 400px; /* Adjust form width */
+    background: linear-gradient(185deg, #dc7a34, #d6573d); /* Form background color */
+    padding: 40px; /* Inner padding for spacing */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    box-sizing: border-box; /* Include padding and border in dimensions */
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+  
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #1a1d61;
+}
+  
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+  
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+  
+.contact-form .submit-btn {
+    background-color: #1a1d61;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto; /* Center the button horizontally */
+}
+  
+.contact-form .submit-btn:hover {
+    background-color: #463db2;
+    transform: scale(1.1); /* Enlarge icon on hover */
+}
+  
+/* Add Phone Screen Effect */
+.phone-screen {
+    border: 3px solid white; /* Phone border */
+    border-radius: 30px; /* Rounded corners to mimic a phone */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 30px; /* Inner padding for the form */
+    position: relative;
+    width: 400px; /* Adjust for phone width */
+    margin: 0 auto; /* Center the phone screen horizontally */
+}
+  
+.phone-screen::before {
+    content: "";
+    width: 60px;
+    height: 5px;
+    background: #000;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.phone-screen::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Social links */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .social-links a img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social-links a img:hover {
+    transform: scale(2);
+  }
+/* --------------------------------------- */
+/* 5) Responsive Design */
+/* --------------------------------------- */
+@media (max-width: 768px) {
+
+    /* Navbar becomes vertical */
+  .rounded-navbar {
+    position: static; /* Removes fixed positioning */
+    transform: none;
+    width: 100%; /* Full width for smaller screens */
+    max-width: none; /* No restriction on width */
+    border-radius: 0; /* Remove rounded corners */
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+
+  .vintage-header {
+        margin-bottom: 0.5rem; /* Reduce space below the header */
+    }
+
+    .contact-container {
+        padding: 1rem;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .phone-screen {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vintage-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-container {
+        padding: 1rem;
+    }
+
+    .contact-form {
+        padding: 20px;
+        font-size: 0.9rem; /* Slightly smaller font */
+    }
+}

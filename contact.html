@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+  <nav class="rounded-navbar">
+    <ul class="nav-links">
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li><a href="about.html"><b>About</b></a></li>
+      <li><a href="work.html"><b>Work</b></a></li>
+      <li><a href="portfolio.html"><b>Portfolio</b></a></li>
+      <li><a href="contact.html"><b>Contact</b></a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="vintage-header">
+    <h1>Contact</h1>
+  </header>
+
+  <div class="contact-container">
+    
+    <!-- Right Section -->
+    <div class="contact-form phone-screen">
+      <form action="https://formspree.io/f/mpzoebek" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="John Carter" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="contact@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="(245) 245 - 1345">
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Select</option>
+            <option value="general">General Inquiry</option>
+            <option value="feedback">Feedback</option>
+            <option value="support">Support</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Please write your message..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Social Links -->
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/sverma1012/" target="_blank">
+      <img src="images/linkedin.png" alt="LinkedIn" />
+    </a>
+    <a href="https://snehaverma.me/" target="_blank">
+      <img src="images/world-wide-web.png" alt="Personal Website" />
+    </a>
+    <a href="https://github.com/sverma1012" target="_blank">
+      <img src="images/github.png" alt="GitHub" />
+    </a>
+    <a href="https://github.com/sverma1012" target="_blank">
+      <img src="images/youtube.png" alt="YouTube" />
+    </a>
+    <a href="SnehaVerma_Resume.pdf" target="_blank">
+      <img src="images/resume.png" alt="Resumé" />
+    </a>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
+

@@ -448,7 +448,7 @@
 
   $(function(){
       $("#quote").typed({
-        strings: ["Data Analyst | Data Scientist | Economist"],
+        strings: ["Business Data and Strategy Specialist | MSFT-Certified Fabric Analytics Engineer"],
         typeSpeed: 50
       });
   });

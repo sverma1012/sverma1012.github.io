@@ -1,0 +1,420 @@
+/* --------------------------------------- */
+/* 1) Base Styles & Reset */
+/* --------------------------------------- */
+/* Reset default styles and set base styles */
+html, body {
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  color: #000; /* Default text color */
+  background-color: #1a1d61; /* Background color for the page */
+  /* Uncomment below to make the page fill the viewport:
+     width: 100%;
+     height: 100%;
+  */
+}
+
+/* --------------------------------------- */
+/* 2) Navbar Styles */
+/* --------------------------------------- */
+/* Styling for the navbar container */
+.rounded-navbar {
+  position: fixed; /* Fix navbar position at the top */
+  top: 2%; /* Space from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Centering adjustment */
+  z-index: 1000; /* Bring navbar above other elements */
+  background: linear-gradient(185deg, #dc7a34, #d6573d); /* Gradient background */
+  border-radius: 40px; /* Rounded corners */
+  padding: 1rem 3rem; /* Spacing inside the navbar */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Shadow effect */
+  transition: background 0.5s ease, box-shadow 0.5s ease; /* Smooth transitions */
+}
+
+/* Navbar style when scrolled */
+.rounded-navbar.scrolled {
+  opacity: 0.7; /* Slightly faded appearance */
+  transition: opacity 0.3s ease; /* Smooth transition effect */
+}
+
+/* Navbar link container styling */
+.nav-links {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center-align links */
+  gap: 2rem; /* Space between links */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Styling for individual navbar links */
+.nav-links li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #504cb4; /* Default link color */
+  font-size: 1rem; /* Font size for links */
+  font-weight: 500; /* Font weight */
+  padding: 0.3rem 1rem; /* Inner spacing */
+  border-radius: 20px; /* Rounded edges for hover effect */
+  transition: 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for navbar links */
+.nav-links li a:hover {
+  background-color: rgba(167, 227, 200, 0.2); /* Background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* --------------------------------------- */
+/* 3) Header */
+/* --------------------------------------- */
+/* Header container for the page title */
+.vintage-header {
+  margin-top: 80px; /* Space from the navbar */
+  text-align: center; /* Center-align text */
+  padding: 1rem; /* Add spacing around the header */
+  /* Optional: Uncomment to add a background pattern:
+     background: url("images/checkerboard.png") repeat-x;
+  */
+}
+
+/* Styling for the page title */
+.vintage-header h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 2.5rem; /* Font size for the title */
+  color: #fff; /* White text color */
+  font-family: 'Garamond', serif; /* Font style */
+}
+
+/* --------------------------------------- */
+/* 4) Disclaimer Section */
+/* --------------------------------------- */
+/* Styling for the disclaimer container */
+.disclaimer {
+  margin: 20px auto; /* Center horizontally and add vertical spacing */
+  padding: 15px; /* Inner spacing */
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  text-align: center; /* Center-align content */
+  border: 2px solid #3b82f6; /* Blue border for styling */
+  border-radius: 10px; /* Rounded corners */
+  max-width: 800px; /* Restrict maximum width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Paragraph styling inside the disclaimer */
+.disclaimer p {
+  margin: 0; /* Remove default margins */
+  font-size: 16px; /* Font size */
+  line-height: 1.5; /* Line spacing */
+}
+
+/* Styling for links inside the disclaimer */
+.disclaimer a {
+  color: #3b82f6; /* Blue text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+}
+
+/* Hover effect for disclaimer links */
+.disclaimer a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Animation for the disclaimer icon */
+.disclaimer span {
+  animation: pulse 1.5s infinite; /* Repeated scaling animation */
+}
+
+/* Keyframes for the pulse animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* --------------------------------------- */
+/* 4) Timeline Styles */
+/* --------------------------------------- */
+.timeline {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  width: 90%; /* Relative width */
+  max-width: 800px; /* Restrict maximum width */
+  margin: 50px auto; /* Center and vertical spacing */
+  position: relative; /* Position context for children */
+}
+
+.timeline-item {
+  display: flex; /* Horizontal layout */
+  justify-content: space-between; /* Space content apart */
+  align-items: center; /* Vertically center content */
+  width: 100%; /* Full width */
+  margin-bottom: 40px; /* Spacing between items */
+  position: relative; /* Context for positioned children */
+}
+
+/* Odd items: Date on the left, Content on the right */
+.timeline-item:nth-child(odd) .timeline-date {
+  order: 1; /* Date first */
+  text-align: left; /* Align date to the left */
+  margin-left: 20px; /* Space from timeline line */
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  order: 2; /* Content second */
+  text-align: left; /* Align content to the left */
+  padding-left: 20px; /* Inner spacing on the left */
+  margin-left: 100px; /* Move closer to the timeline line */
+}
+
+/* Even items: Date on the right, Content on the left */
+.timeline-item:nth-child(even) .timeline-date {
+  order: 2; /* Date second */
+  text-align: right; /* Align date to the right */
+  margin-right: 20px; /* Space from timeline line */
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  order: 1; /* Content first */
+  text-align: right; /* Align content to the right */
+  padding-right: 20px; /* Inner spacing on the right */
+  margin-right: 100px; /* Move closer to the timeline line */
+}
+
+/* Style for the vertical timeline line */
+.timeline::before {
+  content: ""; /* Line content */
+  position: absolute; /* Positioned relative to parent */
+  left: 50%; /* Center line */
+  top: 0; /* Start at the top */
+  bottom: 0; /* Extend to the bottom */
+  width: 2px; /* Line thickness */
+  background-color: #3b82f6; /* Line color */
+  transform: translateX(-50%); /* Center adjustment */
+}
+
+/* Style for timeline points */
+.timeline-item::after {
+  content: ""; /* Circle at each point */
+  position: absolute; /* Positioned relative to parent */
+  width: 10px; /* Circle size */
+  height: 10px; /* Circle size */
+  background-color: #3b82f6; /* Circle color */
+  border-radius: 50%; /* Make the shape circular */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position */
+  z-index: 1; /* Ensure above content */
+}
+
+/* Style for timeline dates */
+.timeline-date {
+  background: linear-gradient(180deg, #dc7a34, #d6573d); /* Gradient background */
+  color: #fff; /* White text */
+  padding: 8px 15px; /* Padding */
+  border-radius: 20px; /* Rounded edges */
+  font-size: 14px; /* Font size */
+  font-weight: bold; /* Bold text */
+}
+
+/* Style for timeline content */
+.timeline-content {
+  background: linear-gradient(180deg, #dc7a34, #d6573d); /* Gradient background */
+  color: #000; /* Black text */
+  padding: 10px 10px; /* Padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  width: 30%; /* Width of the content boxes */
+  position: relative; /* Context for children */
+}
+
+/* Styling for the title in the timeline content */
+.timeline-content h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 18px; /* Font size */
+  color: #1a1d61; /* Dark text color */
+}
+
+/* Paragraph styling inside timeline content */
+.timeline-content p {
+  margin: 10px 0; /* Space above and below */
+  color: #000; /* Black text */
+}
+
+/* Link styling inside timeline content */
+.timeline-content a {
+  color: #0000CC; /* Blue link color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for links */
+.timeline-content a:hover {
+  text-decoration: underline; /* Add underline */
+}
+
+/* Styling for the vertical timeline line */
+.timeline::before {
+  content: ""; /* Empty content for the line */
+  position: absolute; /* Positioned relative to parent */
+  left: 50%; /* Center-align the line */
+  top: 0; /* Start at the top */
+  bottom: 0; /* Extend to the bottom */
+  width: 2px; /* Line width */
+  background-color: #3b82f6; /* Line color */
+  transform: translateX(-50%); /* Center adjustment */
+}
+
+/* Small circle at each timeline point */
+.timeline-item::after {
+  content: ""; /* Empty content for the circle */
+  position: absolute; /* Positioned relative to parent */
+  width: 10px; /* Circle size */
+  height: 10px; /* Circle size */
+  background-color: #3b82f6; /* Circle color */
+  border-radius: 50%; /* Make the shape circular */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center alignment adjustment */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+/* --------------------------------------- */
+/* 6) Toggle Button & List */
+/* --------------------------------------- */
+/* Hidden content class */
+.hidden {
+  display: none; /* Hide the element */
+}
+
+/* Styling for toggle buttons */
+.toggle-btn {
+  margin-top: 10px; /* Space above the button */
+  padding: 5px 10px; /* Inner spacing */
+  background-color: #1a1d61; /* Button background */
+  color: #fff; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for toggle buttons */
+.toggle-btn:hover {
+  background-color: #463db2; /* Darker blue on hover */
+}
+
+/* Styling for lists inside timeline content */
+.responsibilities-list {
+  margin-top: 10px; /* Space above the list */
+  padding-left: 20px; /* Indent list items */
+  list-style-type: disc; /* Bullet points */
+}
+
+/* --------------------------------------- */
+/* 7) Social Links */
+/* --------------------------------------- */
+/* Social links container */
+.social-links {
+  display: flex; /* Flexbox layout */
+  flex-wrap: wrap; /* Allow wrapping for small screens */
+  justify-content: center; /* Center-align links */
+  gap: 1rem; /* Space between links */
+  margin-top: 1rem; /* Space above the section */
+}
+
+/* Styling for social icons */
+.social-links a img {
+  width: 30px; /* Icon width */
+  height: 30px; /* Icon height */
+}
+
+/* Hover effect for social icons */
+.social-links a img:hover {
+  transform: scale(2); /* Enlarge icon on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Adjust the timeline layout for small screens */
+  .timeline {
+    width: 100%; /* Full width */
+  }
+
+  .timeline-item {
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 30px; /* Reduce spacing */
+  }
+
+  .timeline-item:nth-child(odd) .timeline-date,
+  .timeline-item:nth-child(even) .timeline-date {
+    order: 0; /* Move date to the top */
+    text-align: left; /* Align text to the left */
+    margin: 0 0 10px 0; /* Adjust margins */
+    width: auto; /* Allow dates to shrink */
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    order: 1; /* Content below date */
+    text-align: left; /* Align content to the left */
+    margin: 0; /* Remove horizontal margins */
+    width: 100%; /* Full width for content */
+  }
+
+  .timeline::before {
+    display: none; /* Hide the vertical line for smaller screens */
+  }
+
+  .timeline-item::after {
+    display: none; /* Hide the blue dots for smaller screens */
+  }
+
+  /* Adjust font sizes for smaller screens */
+  .timeline-date {
+    font-size: 12px; /* Smaller font size */
+    padding: 5px 10px; /* Reduce padding */
+  }
+
+  .timeline-content {
+    font-size: 14px; /* Smaller font size for content */
+    padding: 10px; /* Adjust padding */
+  }
+
+  /* Navbar becomes vertical */
+  .rounded-navbar {
+    position: static; /* Removes fixed positioning */
+    transform: none;
+    width: 100%; /* Full width for smaller screens */
+    max-width: none; /* No restriction on width */
+    border-radius: 0; /* Remove rounded corners */
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .vintage-header h1 {
+    font-size: 1.8rem; /* Smaller font size for the header */
+  }
+
+  .rounded-navbar {
+    padding: 0.5rem 1.5rem; /* Reduce navbar padding */
+  }
+
+  .nav-links li a {
+    font-size: 0.8rem; /* Smaller font size for links */
+  }
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Sneha Verma</title>
+  <link rel="stylesheet" href="about.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS (for the map) -->
+  <link 
+    rel="stylesheet" 
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
+
+  <link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.css"
+  />
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.js">
+  </script>
+
+</head>
+<body>
+
+  <!-- Centered navigation bar -->
+  <nav class="rounded-navbar">
+    <ul class="nav-links">
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li><a href="about.html"><b>About</b></a></li>
+      <li><a href="work.html"><b>Work</b></a></li>
+      <li><a href="portfolio.html"><b>Portfolio</b></a></li>
+      <li><a href="contact.html"><b>Contact</b></a></li>
+    </ul>
+  </nav>
+
+  <header class="vintage-header">
+    <h1>About Me</h1>
+  </header>
+
+  <div class="container">
+    <!-- Left Column -->
+    <div class="column left-col">
+      <h2><u>My name is Sneha</u></h2>
+      <p>
+        I am currently working as a Business Data and Strategy Specialist at Fastenal from Winona, Minnesota, USA. 
+      </p>
+      <p>
+        Over the past 3 years, I have worked on multiple projects ranging from technical to strategic initiatives. 
+      </p>
+      <p>
+        These days, I am focusing on helping build organizational data strategy and learning about data engineering and architecture.
+      </p>
+      <h3>Resume / CV</h3>
+      <p><a href="SnehaVerma_Resume.pdf" target="_blank">View/Download</a></p>
+      <h3>Recognition</h3>
+      <p>Microsoft-Certified Fabric Analytics Engineer</p>
+      <p>Business Capabilities Professional of the Year (2024)</p>
+      <p>Summa Cum Laude, Luther College</p>
+      <p>Phi Beta Kappa, Luther College</p>
+      <p>Omicron Delta Epsilon, Luther College</p>
+    </div>
+
+    <div class="column center-col">
+      <h2 class="map-title"><u>Where I've Lived</u></h2> 
+      <!-- Remove or comment out old static images -->
+      <!-- 
+      <img src="images/map-canada.png" alt="Map of Canada" class="country-map" />
+      <img src="images/map-ireland.png" alt="Map of Ireland" class="country-map" />
+      <div class="travel-icons">
+        <img src="images/suitcase.png" alt="Suitcase" />
+      </div>
+      <p class="notes">(*Proportions are definitely not accurate!)</p>
+      -->
+
+      <!-- New Leaflet Map Container -->
+      <div id="map"></div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="column right-col">
+      <section class="skills-section">
+        <h2><u>Languages</u></h2>
+        <div class="skills-row">
+          <div class="skill-box">
+            <img src="images/python.png" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/r.png" alt="R" />
+            <span>R</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/sql.png" alt="SQL" />
+            <span>SQL</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/pyspark.png" alt="PySpark" />
+            <span>PySpark</span>
+          </div>
+          <div class="skill-box">
+            <!--<img src="images/DAX.png" alt="DAX" /> -->
+            <span>M Code</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/dax.png" alt="DAX" />
+            <span>DAX</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/vba.webp" alt="VBA" />
+            <span>VBA</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/stata.png" alt="STATA" />
+            <span>Stata</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/html.png" alt="HTML" />
+            <span>HTML</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/css.png" alt="CSS" />
+            <span>CSS</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section">
+        <h2><u>Tools</u></h2>
+        <div class="skills-row">
+          <div class="skill-box">
+            <img src="images/ms_fabric.webp" alt="MS Fabric" />
+            <span>MS Fabric</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/PowerQuery.png" alt="Power Query" />
+            <span>Power Query</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/excel.png" alt="Excel" />
+            <span>Excel</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/PowerBI.png" alt="Power BI" />
+            <span>Power BI</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/smartsheet.png" alt="Smartsheet" />
+            <span>Smartsheet</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/peoplesoft.webp" alt="PeopleSoft" />
+            <span>PeopleSoft</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/msaccess.webp" alt="MS Access" />
+            <span>MS Access</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/ads.jpg" alt="Azure Data Studio" />
+            <span>Azure Data Studio</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/Tableau.png" alt="Tableau" />
+            <span>Tableau</span>
+          </div>
+          <div class="skill-box">
+            <img src="images/Jira.png" alt="Jira" />
+            <span>Jira</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <!-- Demo sections (optional) -->
+  <!--<section id="home" style="height: 100vh;">Home Section</section>
+  <section id="about" style="height: 100vh;">About Section</section>
+  <section id="work" style="height: 100vh;">Work Section</section>
+  <section id="contact" style="height: 100vh;">Contact Section</section> -->
+  
+  <div class="social-links">
+      <a href="https://www.linkedin.com/in/sverma1012/" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn" />
+      </a>
+      <a href="https://snehaverma.me/" target="_blank">
+        <img src="images/world-wide-web.png" alt="Personal Website" />
+      </a>
+      <a href="https://github.com/sverma1012" target="_blank">
+        <img src="images/github.png" alt="GitHub" />
+      </a>
+      <a href="https://github.com/sverma1012" target="_blank">
+        <img src="images/youtube.png" alt="YouTube" />
+      </a>
+      <a href="SnehaVerma_Resume.pdf" target="_blank">
+        <img src="images/resume.png" alt="Resumé" />
+      </a>
+    </div>
+
+  <script src="script2.js"></script>
+
+  <!-- Leaflet JS (for the map) -->
+  <script 
+    src="https://unpkg.com/leaflet/dist/leaflet.js">
+  </script>
+
+  <!-- Map Initialization Script -->
+  <script>
+    // 1) Set map height via CSS or inline style
+    // (See the #map CSS rule in about.css)
+
+    // 2) Initialize the Leaflet map
+    const map = L.map('map').setView([20, 0], 2); 
+
+    // 3) Add a tile layer (OpenStreetMap)
+    // Stamen Toner (black and white)
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: 'Map data © OpenStreetMap contributors, &copy; Carto',
+      maxZoom: 19
+    }).addTo(map);
+
+
+    // 4) List of places
+    const locations = [
+      { name: "New Delhi, India",    coords: [28.6139, 77.2090] },
+      { name: "Warsaw, Poland",     coords: [52.2297, 21.0122] },
+      { name: "Iowa, USA",          coords: [42.032974, -93.581543] },
+      { name: "Minnesota, USA",     coords: [45.0, -93.0] },
+      { name: "Tehran, Iran",       coords: [35.6892, 51.3890] },
+      { name: "Ottawa, Canada",     coords: [45.4215, -75.6972] },
+      { name: "Kathmandu, Nepal",   coords: [27.7172, 85.3240] },
+      { name: "New York, USA",   coords: [40.7128, -74.0060] },
+    ];
+
+    // 5) Loop & add markers
+    locations.forEach(loc => {
+      L.marker(loc.coords)
+        .addTo(map)
+        .bindPopup(loc.name);
+    });
+
+  </script>
+
+</body>
+</html>

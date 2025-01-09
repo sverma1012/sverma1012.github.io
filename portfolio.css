@@ -1,0 +1,119 @@
+/* --------------------------------------- */
+/* 1) Base Styles & Reset */
+/* --------------------------------------- */
+/* Reset default styles and set base styles */
+html, body {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    background-color: #1a1d61; /* Background color for the page */
+    /* Uncomment below to make the page fill the viewport:
+       width: 100%;
+       height: 100%;
+    */
+  }
+  
+  /* --------------------------------------- */
+  /* 2) Navbar Styles */
+  /* --------------------------------------- */
+  /* Styling for the navbar container */
+  .rounded-navbar {
+    position: fixed; /* Fix navbar position at the top */
+    top: 2%; /* Space from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centering adjustment */
+    z-index: 1000; /* Bring navbar above other elements */
+    background: linear-gradient(185deg, #dc7a34, #d6573d); /* Gradient background */
+    border-radius: 40px; /* Rounded corners */
+    padding: 1rem 3rem; /* Spacing inside the navbar */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    transition: background 0.5s ease, box-shadow 0.5s ease; /* Smooth transitions */
+  }
+  
+  /* Navbar style when scrolled */
+  .rounded-navbar.scrolled {
+    opacity: 0.7; /* Slightly faded appearance */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+  }
+  
+  /* Navbar link container styling */
+  .nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center-align links */
+    gap: 2rem; /* Space between links */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Styling for individual navbar links */
+  .nav-links li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #504cb4; /* Default link color */
+    font-size: 1rem; /* Font size for links */
+    font-weight: 500; /* Font weight */
+    padding: 0.3rem 1rem; /* Inner spacing */
+    border-radius: 20px; /* Rounded edges for hover effect */
+    transition: 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for navbar links */
+  .nav-links li a:hover {
+    background-color: rgba(167, 227, 200, 0.2); /* Background on hover */
+    color: #fff; /* White text on hover */
+  }
+  
+  /* --------------------------------------- */
+  /* 3) Header */
+  /* --------------------------------------- */
+  /* Header container for the page title */
+  .vintage-header {
+    margin-top: 80px; /* Space from the navbar */
+    text-align: center; /* Center-align text */
+    padding: 1rem; /* Add spacing around the header */
+    /* Optional: Uncomment to add a background pattern:
+       background: url("images/checkerboard.png") repeat-x;
+    */
+  }
+  
+  /* Styling for the page title */
+  .vintage-header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2.5rem; /* Font size for the title */
+    color: #fff; /* White text color */
+    font-family: 'Garamond', serif; /* Font style */
+  }
+
+  .vintage-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Garamond', serif;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+
+  @media (max-width: 768px) {
+    /* Navbar becomes vertical */
+  .rounded-navbar {
+    position: static; /* Removes fixed positioning */
+    transform: none;
+    width: 100%; /* Full width for smaller screens */
+    max-width: none; /* No restriction on width */
+    border-radius: 0; /* Remove rounded corners */
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+  }
