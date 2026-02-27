@@ -1,6 +1,6 @@
 const timelineData = [
   {
-    date: "Oct 2023 - Present",
+    date: "Oct 2023 - July 2025",
     title: "Business Data and Strategy Specialist",
     company: "Fastenal",
     location: "Winona, Minnesota, USA",
